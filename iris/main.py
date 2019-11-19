@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
     ni = 4
     params = HyperParameters(ni, nc, eta=0.15, max_epoch=150, batch_size=5, eps=1e-3, net_type=NetType.MultipleClassifier)
-    net = NeuralNet_1_2(params)
+    net = NeuralNet(params)
     net.train(reader, checkpoint=1)
 
 

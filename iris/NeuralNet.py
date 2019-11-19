@@ -10,7 +10,7 @@ from TrainingHistory import *
 from LossFunction import *
 from ClassifierFunction import *
 
-class NeuralNet_1_2(object):
+class NeuralNet(object):
     def __init__(self, params):
         self.params = params
         self.W = np.zeros((self.params.input_size, self.params.output_size))
